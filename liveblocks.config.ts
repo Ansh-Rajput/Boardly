@@ -48,7 +48,7 @@ import { createRoomContext, createLiveblocksContext } from "@liveblocks/react";
 // });
 
 const client = createClient({
-  // publicApiKey: "pk_dev_7yxsIvpx46COQkJ_yk5FJjbDBFG0pVYIQfxsdLjQ73KieSeSWGfyjQ-si0XIcc-c",
+  throttle:16,
   authEndpoint: "/api/liveblocks-auth",
 });
 
@@ -56,7 +56,7 @@ const client = createClient({
 // and that will automatically be kept in sync. Accessible through the
 // `user.presence` property. Must be JSON-serializable.
 type Presence = {
-  // cursor: { x: number, y: number } | null,
+  cursor: { x: number, y: number } | null,
   // ...
 };
 
