@@ -65,7 +65,7 @@ export const Text = ({
         style={{
           fontSize: calculateFontSize(width, height),
           color: fill ? colorToCss(fill) : "#000",
-        }}
+        }}  
       />
     </foreignObject>
   );
